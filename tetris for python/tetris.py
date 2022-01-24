@@ -27,7 +27,7 @@ currentY = 0
 
 NextX = 440
 NextY = 40
-
+score = 0
 defaultTime = 0
 levelTime = 0
 speed = 0.5
@@ -49,7 +49,7 @@ def freeze():
 def checkLine():
     flag = False
     global score
-    score = 0
+    
     # line = 0
     for i in range(MAXHEIGHT):
         flag = True
@@ -61,7 +61,7 @@ def checkLine():
                 for q in range(MAXWIDTH):
                     backBoard[p][q] = backBoard[p-1][q]
             score += 100
-    print (score)
+    # print (score)
     #         line += 1
 
     # global gameLevel
